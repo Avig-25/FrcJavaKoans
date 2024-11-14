@@ -29,6 +29,7 @@ public class AboutConsoleAndVariables {
      */
     public static void sayHelloInConsole() {
 
+        System.out.println("Hello!");
     }
 
     /**
@@ -55,6 +56,8 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void computeTwoAndTwo() {
+        System.out.println(2 + 2);
+
 
     }
 
@@ -97,6 +100,9 @@ public class AboutConsoleAndVariables {
      * 4
      */
     public static void createAndDisplayAVariable() {
+        int randon = 2 + 2;
+
+        System.out.println(randon);
 
     }
 
@@ -117,6 +123,11 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void createAndDisplayAStringVariable() {
+        String greeting ;
+    
+        greeting = "Hello!";
+        System.out.println(greeting);
+        
 
     }
 
@@ -152,6 +163,13 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void askAndDisplayNameInConsole() {
+        System.out.println("What is your name? ");
+        String name = readLine();
+        System.out.println("Your name is: ");
+        System.out.println(name);
+
+        
+
 
     }
 
@@ -198,6 +216,11 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void askAndDisplayNameOnASingleLineInConsole() {
+        System.out.println("What is your name? ");
+        String name = readLine();
+        System.out.print("Your name is: ");
+        System.out.println(name);
+
 
     }
 
@@ -222,10 +245,16 @@ public class AboutConsoleAndVariables {
      * [Enter some name]
      * What is your age?
      * [Enter some age]
-     * Your name is [The name entered above] and your age is [The age entered above].
+     * Your name is [The name entered above] and your age is [The age entered above]
      * 
      */
     public static void askNameAndAgeInConsole() {
+        System.out.println("What is your name? ");
+        String nam = readLine();
+        System.out.println("What is your age? ");
+        String umar = readLine();
+        int sal = Integer.parseInt(umar);
+        System.out.println("Your name is " + nam + " and your age is " + sal + ".");
 
     }
 
@@ -264,6 +293,12 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void computeAgeIn5YearsConsole() {
+        System.out.println("What is your age? ");
+        int sal = Integer.parseInt(readLine());
+        int saal = sal + 5;
+        System.out.println("In 5 years from now, you will be " + saal + ".");
+
+
 
     }
 }

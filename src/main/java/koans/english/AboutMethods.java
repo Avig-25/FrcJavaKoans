@@ -26,6 +26,20 @@ public class AboutMethods {
      * 
      */
     public static void computeAgeIn5And10And20YearsConsole() {
+        System.out.println("What is your age?");
+        int age = Integer.parseInt(readLine());
+        int sal = age + 5;
+        System.out.println("In 5 years from now, you will be " + sal + ".");
+        System.out.println("What is your age?");
+        int age2 = Integer.parseInt(readLine());
+        int sal2 = age2 + 10;
+        System.out.println("In 10 years from now, you will be " + sal2 + ".");
+        System.out.println("What is your age?");
+
+        int age3 = Integer.parseInt(readLine());
+        int sal3 = age3 + 20;
+        System.out.println("In 20 years from now, you will be " + sal3 + ".");
+
 
     }
 
@@ -115,7 +129,23 @@ public class AboutMethods {
      * In 20 years from now, you will be [The new age entered above + 20 years].
      * 
      */
-    public static void computeAgeIn5And10And20YearsConsoleWithMethod() {
+    public static void computeAgeIn5And10And20YearsConsoleWithMethod(String age) {
+        System.out.println("What is your age?");
+        int age = Integer.parseInt(readLine());
+        int sal = age + 5;
+        System.out.println("In 5 years from now, you will be " + sal + ".");
+        System.out.println("What is your age?");
+        int age2 = Integer.parseInt(readLine());
+        int sal2 = age + 10;
+        System.out.println("In 10 years from now, you will be " + sal2 + ".");
+        System.out.println("What is your age?");
+
+        int age3 = Integer.parseInt(readLine());
+        int sal3 = age + 20;
+        System.out.println("In 20 years from now, you will be " + sal3 + ".");
+
+
+    }
 
     }
 
@@ -176,6 +206,12 @@ public class AboutMethods {
      * 
      */
     public static int square(int number) {
+        
+        System.out.println(square(3));
+        return 9;
+        System.out.println(square(4));
+        return 16;
+        System.out.println(square(0));
         return 0;
     }    
 
